@@ -19,6 +19,7 @@ namespace DemoApi.Controllers
         }
 
         [HttpGet]
+        [Route("/all")]
         public IEnumerable<WeatherForecast> GetAll()
         {
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
